@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1458943352874">{:repl-history {:ide [], :local [&quot;(+ 1 2 3 4 5\n   )&quot; &quot;(-main)&quot; &quot;(+ 1 23 4 )&quot; &quot;(+ 1 2 3 4 5)&quot; &quot;(better-symmetrize-body-parts asym-hobbit-body-parts)&quot;], :remote []}}</component>
+</project>

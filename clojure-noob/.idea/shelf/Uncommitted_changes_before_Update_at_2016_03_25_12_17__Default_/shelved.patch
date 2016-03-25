@@ -1,0 +1,50 @@
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/profiles_settings.xml	(revision )
++++ .idea/inspectionProfiles/profiles_settings.xml	(revision )
+@@ -0,0 +1,7 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="PROJECT_PROFILE" value="Project Default" />
++    <option name="USE_PROJECT_PROFILE" value="true" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/Project_Default.xml	(revision )
++++ .idea/inspectionProfiles/Project_Default.xml	(revision )
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="ClUnusedLocalSymbol" enabled="true" level="WARNING" enabled_by_default="true" />
++  </profile>
++</component>
+\ No newline at end of file
+Index: clojure-noob.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- clojure-noob.iml	(revision 547eba0cb93e2387f4f9c747e2340566abf7a648)
++++ clojure-noob.iml	(revision )
+@@ -13,8 +13,8 @@
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" name="Leiningen: clojure-complete:0.2.3" level="project" />
++    <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
+     <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.8.0" level="project" />
+-    <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.10" level="project" />
++    <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.12" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
