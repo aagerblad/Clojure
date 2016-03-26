@@ -68,7 +68,8 @@
 
 (defn extra-part [part]
   (let [name (:name part)]
-    (if (or (clojure.string/includes? name "left") (clojure.string/includes? name "right"))
+    (if (or (clojure.string/includes? name "left")
+            (clojure.string/includes? name "right"))
       {:name (clojure.string/join ["second-" name]) :size (:size part)}
       part)))
 
@@ -79,3 +80,29 @@
             (into final-body-parts (set [part (extra-part part)])))
           []
           body-parts))
+
+(defn hit
+  [asym-body-parts]
+  (let [sym-parts (better-symmetrize-body-parts asym-body-parts)
+        body-part-size-sum (reduce + (map :size sym-parts))
+        target (rand body-part-size-sum)]
+    (loop [[part & remaining] sym-parts
+            accumulated-size (:size part)]
+       (if (> accumulated-size target)
+         part
+         (recur remaining (+ accumulated-size (:size (first remaining))))))))
+
+
+(defn add100
+  "Adds 100"
+  [int]
+  (+ 100 int))
+
+(defn dec-maker
+  "Subtracts"
+  [s]
+  #(- % s))
+
+(defn mapset
+  [f coll]
+  (set (map f coll)))
