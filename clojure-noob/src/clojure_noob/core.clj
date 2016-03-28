@@ -87,10 +87,10 @@
         body-part-size-sum (reduce + (map :size sym-parts))
         target (rand body-part-size-sum)]
     (loop [[part & remaining] sym-parts
-            accumulated-size (:size part)]
-       (if (> accumulated-size target)
-         part
-         (recur remaining (+ accumulated-size (:size (first remaining))))))))
+           accumulated-size (:size part)]
+      (if (> accumulated-size target)
+        part
+        (recur remaining (+ accumulated-size (:size (first remaining))))))))
 
 
 (defn add100
@@ -106,3 +106,42 @@
 (defn mapset
   [f coll]
   (set (map f coll)))
+
+(defn testtest
+  [a]
+  (let [[h & t] a]
+    (if (empty? t)
+      h
+      (testtest t))))
+
+(defn woo []
+  #(let [[h & t] %]
+    (if (empty? t)
+      h
+      (recur t))))
+
+(defn woo2 []
+  #(let [[h & t] %]
+    (if (= 1 (count t))
+      h
+      (recur t))))
+
+(defn woo3 []
+  #(if (>= 0 %2)
+      (first %1)
+      (recur (rest %1) (dec %2))))
+
+(defn ci
+  [coll]
+  (#(if (empty? (rest %1))
+       %2
+       (recur (rest %1) (inc %2))) coll 1))
+
+(defn c
+  [coll n]
+  (if (empty? (rest coll))
+    n
+    (c (rest coll) (inc n))))
+
+(defn fib
+  [])
