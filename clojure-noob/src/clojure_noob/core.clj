@@ -106,3 +106,25 @@
 (defn mapset
   [f coll]
   (set (map f coll)))
+
+(def human-consumption [8.1 7.3 6.6 5.0])
+(def critter-consumption [0.0 0.2 0.3 1.8])
+(defn unify-diet-data
+  "docstring"
+  [human critter]
+  {:human human
+   :critter critter}
+  )
+
+(defn testf
+  "docstring"
+  []
+  #(% 10))
+
+(defn my-map
+  "docstring"
+  [f & coll]
+  (reduce (fn [new-map & val]
+            (conj new-map (f val)))
+          []
+          coll))
