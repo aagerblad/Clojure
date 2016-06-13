@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1465760359436">{:repl-history {:ide [], :local [&quot;(min [{:a 1 :b 1} {:a 0 :b 3}])&quot; &quot;(min [{:a 1 :b 1} {:a 3 :b 0}])&quot; &quot;(smin [{:a 1 :b 1} {:a 3 :b 0}])&quot; &quot;(+ 12 213)&quot; &quot;min&quot; &quot;(min [{:a 1 :b 3} {:a 4 :b 0}])&quot; &quot;(comparator-over-maps clojure.core/min [{:a 1 :b 2}])&quot; &quot;(comparator-over-maps clojure.core/min [{:a 1 :b 2} {:a 4 :b 0}])&quot; &quot;(smin [{:a 1 :b 3} {:a 5 :b 0}])&quot; &quot;(min [{:a 1 :b 3} {:a 5 :b 0}])&quot; &quot;(zipmap [:a :b] [1 2])&quot; &quot;(min [{:lat 1 :lng 3} {:lat 5 :lng 0}])&quot; &quot;(min [{:lat 1 :lng 3} {:a 5 :lng 0}])&quot;], :remote []}}</component>
+</project>
